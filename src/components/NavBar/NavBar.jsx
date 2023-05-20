@@ -1,9 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 let NavBar = () => {
     return (
         <React.Fragment>
-            <h2> NavBar </h2>
+            <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
+                <div className="container">
+                    <Link to={'/'} className="navbar-brand">
+                        <i className="fa fa-mobile text-warning"/> Contacts <span className="text-warning"> Manager</span>
+                    </Link>
+                </div>
+            </nav>
         </React.Fragment>
     )
 };
