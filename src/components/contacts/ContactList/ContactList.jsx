@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { ContactService } from "../../../services/ContactService";
 import spinner from "../../spinner/spinner";
 
+
+// Todo: CORRECT THE MARGIN BETWEEN CARDS 
+// Todo: 28:39 video
+
+
 let ContactList = () => {
 
     let [state, setState]= useState({
@@ -114,7 +119,7 @@ let ContactList = () => {
                                             <i className="fa fa-eye"/>
                                         </Link>
                                         
-                                        <Link to={'/contacts/edit/:contactId'} className="btn btn-primary my-1">
+                                        <Link to={`/contacts/edit/${contact.id}`} className="btn btn-primary my-1">
                                             <i className="fa fa-pen"/>
                                         </Link>
                                         
