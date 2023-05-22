@@ -1,54 +1,24 @@
 {
   "contacts": [
     {
-      "id": "D6BNdWnHI",
-      "name": "Brad Gibson",
-      "company": "YouTube",
-      "email": "brad@gmail.com",
-      "title": "Youtuber",
-      "mobile": "9876546787",
-      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g8R5VmgqDqpRCwQfw2Y9V-DM-iXS59R9hQ&usqp=CAU",
-      "groupId": "3"
+      "name": "Dev Gyinae",
+      "photo": "https://thumbs.dreamstime.com/b/businessman-icon-vector-male-avatar-profile-image-profile-businessman-icon-vector-male-avatar-profile-image-182095609.jpg",
+      "mobile": "0205346569",
+      "email": "dev.gyinae@gmail.com",
+      "company": "Freelancer",
+      "title": "React Developer FE-Heavy",
+      "groupId": "4",
+      "id": 1
     },
     {
-      "id": "TVobxeKbI",
-      "name": "Glenda Kim",
-      "company": "Friend",
-      "email": "glenda@gmail.com",
-      "title": "freelancer",
-      "mobile": "8880009991",
-      "photo": "https://www.kindpng.com/picc/m/163-1636340_user-avatar-icon-avatar-transparent-user-icon-png.png",
-      "groupId": "2"
-    },
-    {
-      "id": "UyEDV5Yds",
-      "name": "Vladeen Min",
-      "company": "Service",
-      "email": "vladeen@gmail.com",
-      "title": "Electrician",
-      "mobile": "9876546787",
-      "photo": "https://png.pngtree.com/png-clipart/20190922/original/pngtree-business-male-user-avatar-vector-png-image_4774078.jpg",
-      "groupId": "4"
-    },
-    {
-      "name": "Rajan",
-      "photo": "https://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/256/User-icon.png",
-      "mobile": "9090909090",
-      "email": "rajan@gmail.com",
-      "company": "HCL Technologies",
-      "title": "Software Engineer",
-      "groupId": "1",
-      "id": "kLt-bJF"
-    },
-    {
-      "name": "Samuel Gyinae Kwadwo-Bour",
-      "photo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAMAAADxY+0hAAAA7VBMVEUAhon/s4EdJzP////+qG3y8vL/t4P/tYL/sHsAiYwAhIn/k3L+4M4dJTH/uoUAFy3/n3eyg2UeIS4AHS9vkYffq4IAFCwAGS0eHSsJeHz/rXWSlH7vsYIaN0EbMj0PZ20RIjF5XE4AACf0rn7/pXqum3kWSVERYGYZPUYTWV/Gj2zhonfXnHN3lYcADComiYgnLTaenoXLp4JWj4dDjIjBpoT/+PP/zK0fFSU5NjuaclppU0pSREFeS0WOalYTFylrYVf/18D/7OD/wJicxMZUnqG51daAtbfS4eLX1dD+omE4lpjMztXd3uLi8PDGCSnXAAAGVklEQVRoge2afVeqShTGAQ8zwk09aL5QVhhFiZaW9uJL3luZdvOcvv/HuTMIBMxgnBlwrbuWz+qfGOL3zN57ZjacIwg77bTTTv83KUFtna3qJ23r8gjp0rIuTnR1ix4UQW8fSY1GueCoXC43CsfWhS5sx4OiXyK0FFGh0Thu69k7UFTrkYC7Kj9KFxknQtGPyzF0R42CpWdqYDMeByFTB9Z3eMdBW0jbgbvOTx6/x2MH5ZNUDSj6CV7sVvsorvSialhqag4U3UIzclZ6UjwKwXFaVaBcFBIknVChkE4OFCtZzkk9XqRhwGow4pGBNrcBpc2OR0XAa0DRk1ccRQXedagcsZReMAI6F/6EJ/pOBI55AqBccoUfq8FTAjrr0gtGgD0DSpsz+1hliz0A/OHHYg4A3+Lz1GBdg4rOW/2OmDch5SKF9HMUgBLb7Bh/wi9cMvNj8j9qlbbCjyn/kgbG9T/gMy9AOr8yASKwC5WkfPb8U/n1KRRFEZhPSXPAvANT+dctjEcqav1kDpjPYAq/LmlAdAXEsZQoCaz7n1f/Rt1Zb0alNJqZPt5Jwuz7GBSOGPHe8WNMtCnqZtGqs00AxaBgsTPuVzbvBuw9mNt9VGbFIjRNs1gEIqkisCe12gYLj+zvAboz//o65ZACd4Ng2q3RdS0cB6Ne6zvhv2SlC4J6jJ9Q0mjzDglAs6O1nkZS6brmSBo9jTsa3qSYTz/BOwAS8HEUAEpSp9u1Nc22ux0T/a6VcP/HPn10AD8G+RBCgFR0FE6HfxkLoBvxNcz/m6cBV50d2Oebtq2Nx7PWZDrtT81QEY6l/nQ6aY3HePJF1xPiV/4ZqOz4/Wqn5vOhOapXHBlI9VYxwDdPDQldXA/XNOjx6xMIq/uMDtQrCIvooPP43dNAeZeCfGheB2rfmHr804kJUdau2Az00B+LoFXy4m8W6hUnAobU7z+F4g/sUb8vefOfAZc/c7YraPaYpn/j/DGahcuHplvapoiKLVL9qOrQFtXB5a/5peneBG9YAqBW3TB2be+BEK4rm74VwfUNgFitsMrDF2HszpdQjPxbKneDm7gheMtUgIe0x6FKa8VwYHf0ZNKG4CELXhCalIehlV4bU/djCCUjtCr9gSYbXhg0yVLSapIxokDQkI2OmwppDTQHjHx1eGdGHzbGHRd1AUANDZ1GEgCheTfk2IF7kSJY86kFsOZHrDUHPXY61n5kPmgTNqb0+HdLktEPD7GtvA18sTiqXdv0+i9OateRViF9PjRnMXi0NsZa9O7U+bjhjMGL5NabMt/Z3fFPDN9pj4Kjac//51pn/oV8Pv81euaOgoz44OdfrtwLBz+wDlzWmTd6BrPhwy8+/MJ7BrLnR+Mf5mcff6/x8La/KJ/cFrNYf1/Ku/z4O7LlowhgbRjn5w+iJ+AfiZ/fa3Lx73j5Ah+fqfMOKqYLTShwxTv99VtIRHmqKHxzyMsX9inH3R5VD2T4q9x4oVclp3+fo+mBiADgTj9KwB2RgPwelU92ZYA//IIwJPkPNPw9sRHB2xTwtBVATcAzGX7WLw9hDYgKzD9T+Cm99pKiVAAkA7BHhp/1vSeqHvEiSFbAS5Sext7rSr0iKyCSgfvXaPZhlemrC93ADZHcg1AE7kWy+NJYe76BO7IGwYtPJ0tfhOnUvm+AcgzlwcPey8ve8ysk8Mzf3OINkBFADnD7Qzl4oJk23qmBpCcxbHJ8dI03MCQ/h1Dp4DwDuqMb81sHEFazmPxa6vC8uelrIHo/rV4JmeEF54PMLXS/70fZADTPB2qW9LUFYf/m7jbaljZvzw+H2cNdC6p6+COsc3Vb8LUDkr81tBrL34YHdT5HDmh8/W3xln31LWVZXlLyr68W6CjKGi8IMtb7W4T/cT6X8VE4zzgA6vzeMSD/m/8I4l+9hmyVrYGV7Ov5w3PwAf1WILfIlK8u5IBeHQMfB6HXkUxL8E0O6eUVxSDSin5miFeXubAB+fn1JRfRKkMDwjzCJ14D5GWWeEFfvedCePl3CD/P/BTQ394DfPnXr19f9AXnP3YkkhpKQoD/mf3u6zpYLb4C8Fv2Er/FAxglIRcuwPlWDj9fqr78dPifDv1d4PpvxkwOhPmnnFuscOK3GfqAg9XifaUuP5fbDX3AAO75ttv37bTTTjulpv8AphOtkw99FtYAAAAASUVORK5CYII=",
-      "mobile": "12121333",
-      "email": "sginae@edu.hse.ru",
-      "company": "tech",
-      "title": "Network Engineer",
-      "groupId": "1",
-      "id": "njyG35w"
+      "name": "Samuel Gyinae",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vjzwZaBf6bKmbl7I00WbZ9RPOlriawksgQ&usqp=CAU",
+      "mobile": "0594824422",
+      "email": "dev.gyinae@gmail.com",
+      "company": "Freelancer",
+      "title": "Frontend Dev",
+      "groupId": "4",
+      "id": 2
     }
   ],
   "groups": [

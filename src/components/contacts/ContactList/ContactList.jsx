@@ -5,17 +5,19 @@ import spinner from "../../spinner/spinner";
 
 
 // Todo: CORRECT THE MARGIN BETWEEN CARDS 
-// Todo: 28:39 video
-
 
 let ContactList = () => {
 
-    let [state, setState]= useState({
-        loading: false,
-        contacts: [],
-        errorMessage: ''
-    }
-    );
+    let [query, setQuery] = useState({
+        text: '', 
+    })
+
+    let [state, setState] = useState({
+      loading: false,
+      contacts: [],
+      filteredContacts: [],
+      errorMessage: "",
+    });
 
       useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +27,8 @@ let ContactList = () => {
         setState({
           ...state,
           loading: false,
-          contacts: response.data
+          contacts: response.data,
+          filteredContacts: response.data
         });
       } catch (error) {
         setState({
@@ -39,7 +42,43 @@ let ContactList = () => {
     fetchData();
   }, []);
 
-  const { loading, contacts, errorMessage } = state;
+
+  let clickDelete = async (contactId) => {
+    try {
+        let response= await ContactService.deleteContact(contactId);
+        if(response){
+            setState({...state, loading:true});
+            let response = await ContactService.getAllContacts();
+            setState({
+              ...state,
+              loading: false,
+              contacts: response.data,
+              filteredContacts: response.data
+            });
+        }
+    } catch (error) {
+        setState({
+          ...state,
+          loading: false,
+          errorMessage: error.message,
+        });
+    }
+  }
+
+  let searchContacts = (event) => {
+        setQuery({...query, text: event.target.value});
+        let theContacts = state.contacts.filter(contact => {
+            return contact.name.toLowerCase().includes(event.target.value.toLowerCase())
+        });
+        setState({
+            ...state,
+            filteredContacts: theContacts
+        });
+  }
+
+
+
+  const { loading, contacts, errorMessage, filteredContacts } = state;
 
 
     return (
@@ -61,7 +100,11 @@ let ContactList = () => {
                                 <form className="row">
                                     <div className="col">
                                         <div className="mb-2">
-                                        <input type="text" className="form-control" placeholder="search names"/>
+                                        <input 
+                                        name="text"
+                                        value={query.text}
+                                        onChange={searchContacts}
+                                        type="text" className="form-control" placeholder="search names"/>
                                     </div>
                                     </div>
 
@@ -85,7 +128,7 @@ let ContactList = () => {
                 <div className="container">
                     <div className="row">
                         {
-                            contacts.length > 0 && contacts.map(contact => {
+                            filteredContacts.length > 0 && filteredContacts.map(contact => {
                                return(
                                                         <div className="col-md-6">
                             <div className="card">
@@ -123,7 +166,9 @@ let ContactList = () => {
                                             <i className="fa fa-pen"/>
                                         </Link>
                                         
-                                        <button className="btn btn-danger my-1">
+                                        <button
+                                        onClick={() => clickDelete(contact.id)}
+                                        className="btn btn-danger my-1">
                                             <i className="fa fa-trash"/>
                                         </button>
                                     </div>
