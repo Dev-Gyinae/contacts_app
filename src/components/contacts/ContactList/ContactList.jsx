@@ -4,8 +4,6 @@ import { ContactService } from "../../../services/ContactService";
 import spinner from "../../spinner/spinner";
 
 
-// Todo: CORRECT THE MARGIN BETWEEN CARDS 
-
 let ContactList = () => {
 
     let [query, setQuery] = useState({
