@@ -7,9 +7,11 @@ const EditContact = () => {
   let navigate = useNavigate();
   let { contactId } = useParams();
 
+  // State variables to manage the component state
   const [state, setState] = useState({
-    loading: false,
+    loading: false, // Loading state for displaying a spinner
     contact: {
+      // Object to hold the contact data
       name: "",
       photo: "",
       mobile: "",
@@ -18,27 +20,28 @@ const EditContact = () => {
       title: "",
       groupId: "",
     },
-    groups: [],
-    errorMessage: "",
+    groups: [], // Array to hold the available groups
+    errorMessage: "", // Error message if any error occurs
   });
 
   useEffect(() => {
+    // Fetch contact and group data when the component mounts
     const fetchData = async () => {
       try {
-        setState({ ...state, loading: true });
-        let response = await ContactService.getContact(contactId);
-        let groupResponse = await ContactService.getGroups();
+        setState({ ...state, loading: true }); // Set loading state to true
+        let response = await ContactService.getContact(contactId); // Fetch the contact data
+        let groupResponse = await ContactService.getGroups(); // Fetch the group data
         setState({
           ...state,
-          loading: false,
-          contact: response.data,
-          groups: groupResponse.data,
+          loading: false, // Set loading state to false
+          contact: response.data, // Set the contact data
+          groups: groupResponse.data, // Set the group data
         });
       } catch (error) {
         setState({
           ...state,
-          loading: false,
-          errorMessage: error.message,
+          loading: false, // Set loading state to false
+          errorMessage: error.message, // Set the error message if an error occurs
         });
       }
     };
@@ -47,6 +50,7 @@ const EditContact = () => {
   }, [contactId]);
 
   let updateInput = (event) => {
+    // Update the input field values when they change
     setState({
       ...state,
       contact: {
@@ -64,7 +68,7 @@ const EditContact = () => {
         contactId
       );
       if (response) {
-        navigate("/contacts/list", { replace: true });
+        navigate("/contacts/list", { replace: true }); // Navigate to the contact list page
       }
     } catch (error) {
       setState({ ...state, errorMessage: error.message });
@@ -77,11 +81,12 @@ const EditContact = () => {
   return (
     <React.Fragment>
       {loading ? (
-        <Spinner />
+        <Spinner /> // Show a spinner while the data is being loaded
       ) : (
         <React.Fragment>
           <section className="add-contact">
             <div className="container">
+              {/* Form for editing contact details */}
               <div className="row">
                 <div className="col">
                   <p className="h4 text-primary fw-bold"> Edit Contact</p>
@@ -97,6 +102,7 @@ const EditContact = () => {
               <div className="row align-items-center">
                 <div className="col-md-4">
                   <form onSubmit={submitForm}>
+                    {/* Input fields for editing contact details */}
                     <div className="mb-2">
                       <input
                         required
@@ -173,6 +179,7 @@ const EditContact = () => {
                         onChange={updateInput}
                       >
                         <option value=""> Choose Category </option>
+                        {/* Dropdown options for selecting a group */}
                         {groups.length > 0 &&
                           groups.map((group) => {
                             return (
