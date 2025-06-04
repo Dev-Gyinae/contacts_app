@@ -1,5 +1,5 @@
 
-**React Contact Manage**r
+**React Contact Manager**
 This is a React-based contact manager application that allows users to store and update contact information, including profile images, via URL. The application utilizes a JSON server backend for data persistence and Axios for making HTTP requests. The UI is built using the Bootstrap framework for a responsive and visually appealing design.
 
 Features
