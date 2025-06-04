@@ -48,3 +48,5 @@ Axios
 Bootstrap
 Acknowledgments
 This application was developed as a learning project and was inspired by various React tutorials and examples available online.
+
+made some recent adjustments to the json files by dependabot to fix dependancy issues
